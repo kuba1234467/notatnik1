@@ -63,6 +63,12 @@ public partial class ListScreen : UserControl
 
     private void OnAddClick(object? sender, RoutedEventArgs e)
     {
-        StatusText.Text = "Formularz dodawania pojawi się w następnym kroku.";
+        _window?.ShowAdd();
+    }
+
+    private void OnCountClick(object? sender, RoutedEventArgs e)
+    {
+        var lines = File.ReadAllLines("dane/pozycje.txt");
+        CountText.Text = $"Pozycji w pliku: {lines.Length}";
     }
 }

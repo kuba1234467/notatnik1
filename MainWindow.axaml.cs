@@ -19,4 +19,9 @@ public partial class MainWindow : Window
     {
         Content = new DetailsScreen(this, title);
     }
+
+    public void ShowAdd()
+    {
+        Content = new AddScreen(this);
+    }
 }
