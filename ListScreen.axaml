@@ -1,0 +1,14 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="katalog.ListScreen">
+    <StackPanel Margin="24" Spacing="12">
+        <TextBlock FontSize="22" Text="Katalog" />
+        <TextBlock Text="Pozycje w zbiorze:" />
+        <ListBox Name="ItemsList" Height="260" />
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button Click="OnDetailsClick">Szczegóły</Button>
+            <Button Click="OnAddClick">Dodaj</Button>
+        </StackPanel>
+        <TextBlock Name="StatusText" />
+    </StackPanel>
+</UserControl>
