@@ -52,13 +52,13 @@ public partial class ListScreen : UserControl
 
     private void OnDetailsClick(object? sender, RoutedEventArgs e)
     {
-        if (ItemsList.SelectedItem is not ListBoxItem row || row.Tag is not CatalogItem)
+        if (ItemsList.SelectedItem is not ListBoxItem row || row.Tag is not CatalogItem item)
         {
             StatusText.Text = "Wybierz pozycję z listy.";
             return;
         }
 
-        StatusText.Text = "Ekran szczegółów pojawi się w następnym kroku.";
+        _window?.ShowDetails(item);
     }
 
     private void OnAddClick(object? sender, RoutedEventArgs e)

@@ -1,0 +1,11 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="katalog.DetailsScreen">
+    <StackPanel Margin="24" Spacing="12">
+        <TextBlock FontSize="22" Text="Szczegóły" />
+        <TextBlock Name="TitleText" />
+        <TextBlock Name="YearText" />
+        <TextBlock Name="RatingText" />
+        <Button Click="OnBackClick">Wstecz</Button>
+    </StackPanel>
+</UserControl>
