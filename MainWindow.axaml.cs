@@ -15,8 +15,8 @@ public partial class MainWindow : Window
         Content = new ListScreen(this);
     }
 
-    public void ShowDetails(CatalogItem item)
+    public void ShowDetails(string title)
     {
-        Content = new DetailsScreen(this, item);
+        Content = new DetailsScreen(this, title);
     }
 }

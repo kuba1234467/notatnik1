@@ -58,7 +58,7 @@ public partial class ListScreen : UserControl
             return;
         }
 
-        _window?.ShowDetails(item);
+        _window?.ShowDetails(item.Title);
     }
 
     private void OnAddClick(object? sender, RoutedEventArgs e)
